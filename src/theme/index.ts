@@ -26,36 +26,47 @@ const theme = createTheme({
   typography: {
     fontFamily: `'Nunito', sans-serif`,
     h1: {
-      color: colors.secondaryMain,
-      fontSize: '3.125rem',
-      fontWeight: 800,
+      color: colors.grey50,
+      fontSize: '3.525rem',
+      fontWeight: 700,
     },
     h2: {
-      color: colors.grey300,
+      color: colors.grey700,
+      fontSize: '3rem',
+      fontWeight: 600,
     },
     h3: {
-      color: colors.grey300,
-    },
-    h4: {
-      color: colors.grey300,
-    },
-    h5: {
-      color: colors.grey300,
-    },
-    h6: {
-      color: colors.grey300,
+      color: colors.grey700,
+      fontSize: '2.125rem',
+      fontWeight: 600,
+      h4: {
+        color: colors.grey50,
+        fontSize: '1.525rem',
+      },
+      h5: {
+        color: colors.grey700,
+        fontSize: '1.525rem',
+      },
+      h6: {
+        color: colors.grey300,
+      },
     },
     subtitle1: {
-      color: colors.grey300,
+      color: colors.grey700,
+      fontSize: '2.125rem',
+      fontWeight: 600,
     },
     subtitle2: {
-      color: colors.grey300,
+      color: colors.grey50,
+      fontSize: '1.4rem',
     },
     body1: {
-      color: colors.grey300,
+      color: colors.grey50,
+      fontSize: '1.225rem',
     },
     body2: {
-      color: colors.grey300,
+      color: colors.grey50,
+      fontSize: '1.2rem',
     },
     button: {
       color: colors.grey300,
@@ -100,11 +111,11 @@ const theme = createTheme({
   // },
   breakpoints: {
     values: {
-      xs: 450,
-      sm: 600,
-      md: 900,
+      xs: 480,
+      sm: 768,
+      md: 992,
       lg: 1200,
-      xl: 1536,
+      xl: 1440,
     },
   },
 });

@@ -1,30 +1,39 @@
-import { animated, useTrail } from '@react-spring/web';
+import { animated, useSpring } from '@react-spring/web';
+import { useTranslations } from 'next-intl';
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
+import ActionButton from '@/components/ui/ActionButton';
+
+interface ITextPart {
+  text: string;
+  color?: string;
+}
 interface ISlideContentProps {
-  title: string;
+  title: ITextPart[];
   backgroundImage: StaticImageData;
-  // activeIndex: number;
+  activeIndex: boolean;
 }
 
-const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage }) => {
-  const letters = title.split('');
-  const [trailTrigger, setTrailTrigger] = useState(false);
+const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIndex }) => {
+  const t = useTranslations('Slider');
 
-  const trail = useTrail(letters.length, {
-    opacity: 1,
-    transform: 'translateY(0)',
-    from: { opacity: 0, transform: 'translateY(20px)' },
-    config: { duration: 50 },
-    reset: true,
-  });
+  const [springProps, api] = useSpring(() => ({
+    opacity: 0,
+    transform: 'translateX(-50px)',
+  }));
+
   useEffect(() => {
-    setTrailTrigger(true);
-  }, []);
+    api.start({
+      opacity: activeIndex ? 1 : 0,
+      transform: activeIndex ? 'translateX(0)' : 'translateX(-50px)',
+      config: { duration: 1500 },
+    });
+  }, [activeIndex]);
+
   return (
     <Box
       sx={{
@@ -32,27 +41,70 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage }) => {
         position: 'relative',
       }}
     >
-      <Image src={backgroundImage} fill alt={title} style={{ objectFit: 'cover', zIndex: '-1' }} />
+      {/* Background */}
       <Box
-        style={{
+        sx={{
           position: 'absolute',
-          top: '25vh',
-          left: '0',
-          width: '20vw',
-          color: 'white',
-          textAlign: 'center',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          padding: '10px',
-          borderRadius: '5px',
+          width: '100%',
+          height: '100%',
+          zIndex: '-1',
+          '::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            zIndex: 1,
+          },
         }}
       >
-        <Typography variant="h1" component="div">
-          {trail.map((style, index) => (
-            <animated.span key={index} style={style}>
-              {letters[index]}
-            </animated.span>
+        <Image
+          src={backgroundImage}
+          fill
+          alt={'Створіть яскраве майбутнє із BrightFox School!'}
+          style={{ objectFit: 'cover' }}
+        />
+      </Box>
+
+      {/* Title */}
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '30vh',
+          left: '7vw',
+          width: '52vw',
+          padding: '10px',
+        }}
+      >
+        {activeIndex &&
+          title.map((item, index) => (
+            <animated.div
+              key={index}
+              style={{
+                ...springProps,
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{ color: item.color, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+              >
+                {item.text}
+              </Typography>
+            </animated.div>
           ))}
-        </Typography>
+
+        {/* Button */}
+        {activeIndex && (
+          <animated.div
+            style={{
+              ...springProps,
+            }}
+          >
+            <ActionButton>{t('button')}</ActionButton>
+          </animated.div>
+        )}
       </Box>
     </Box>
   );

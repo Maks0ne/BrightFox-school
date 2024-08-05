@@ -1,5 +1,6 @@
+import { animated, useSpring } from '@react-spring/web';
 import { StaticImageData } from 'next/image';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -14,8 +15,13 @@ import theme from '@/theme';
 
 SwiperCore.use([Autoplay]);
 
+interface ITextPart {
+  text: string;
+  color?: string;
+}
+
 interface ISlideData {
-  title: string;
+  title: ITextPart[];
   backgroundImage: StaticImageData;
 }
 
@@ -25,34 +31,48 @@ interface IWrapperProps {
 
 const SliderWrapper: FC<IWrapperProps> = ({ slides }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  const [springProps, api] = useSpring(() => ({
+    opacity: 0.4,
+  }));
+
+  useEffect(() => {
+    api.start({
+      opacity: 1,
+      config: { duration: 500 },
+    });
+  }, []);
+
   return (
-    <Swiper
-      modules={[A11y, Pagination, EffectFade]}
-      spaceBetween={50}
-      slidesPerView={1}
-      effect={'fade'}
-      autoplay={{ delay: 6000 }}
-      pagination={{
-        clickable: true,
-        renderBullet: (index, className) => {
-          const color = theme.palette.secondary.main;
-          return `<span class="${className}" style="background-color: ${color};"></span>`;
-        },
-      }}
-      onSlideChange={(swiper) => {
-        setActiveIndex(swiper.activeIndex);
-      }}
-    >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
-          <SlideContent
-            title={slide.title}
-            backgroundImage={slide.backgroundImage}
-            // activeIndex={activeIndex}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <animated.div style={springProps}>
+      <Swiper
+        modules={[A11y, Pagination, EffectFade]}
+        spaceBetween={50}
+        slidesPerView={1}
+        effect={'fade'}
+        autoplay={{ delay: 60000 }}
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) => {
+            const color = theme.palette.secondary.main;
+            return `<span class="${className}" style="background-color: ${color};"></span>`;
+          },
+        }}
+        onSlideChange={(swiper) => {
+          setActiveIndex(swiper.activeIndex);
+        }}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <SlideContent
+              title={slide.title}
+              backgroundImage={slide.backgroundImage}
+              activeIndex={activeIndex === index}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </animated.div>
   );
 };
 

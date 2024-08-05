@@ -1,0 +1,29 @@
+{
+  "Slider": {
+    "slide1_title1": "Learning Without Limits",
+    "slide1_title2": "BrightFox School!",
+    "slide2_title1": "Your Path to Perfect English",
+    "slide2_title2": "Starts Here!",
+    "slide3_title1": "Growing Together, Learning Together at",
+    "slide3_title2": "BrightFox School",
+    "slide4_title1": "Learn English Easily and Fun with",
+    "slide4_title2": "BrightFox School!",
+    "button": "Trial lesson"
+  },
+  "WelcomeTitle": {
+    "title": "- Your road to fluent English!",
+    "subtitle": "We offer quality education for all ages and levels."
+  },
+  "AboutUsMain": {
+    "card1_title": "BrightFox School - Your Path to English Excellence!",
+    "card1_paragraph": "Welcome to BrightFox School, where your path to excellence in the English language begins! Our school offers an individual approach to each student to help you achieve your language goals. Whether it's improving conversational skills, preparing for exams, or learning English from scratch – we will help you unlock your full potential.",
+    "card2_title": "Discover the World of English with BrightFox School.",
+    "card2_paragraph": "With BrightFox School, you will open new horizons in learning the English language. Our courses and programs will help you not only master grammar and vocabulary but also confidently use the language in everyday life and professional environments. We use modern teaching methods to make the learning process engaging and effective.",
+    "card3_title": "With Us, Your English Will Shine!",
+    "card3_paragraph": "Our classes at BrightFox School turn learning English into an exciting journey. We use interactive teaching methods, modern resources, and practical activities to make the learning process lively and dynamic. You will not only learn the language but also learn to use it in real situations, making your English bright and confident."
+  },
+  "ParallaxMain": {
+    "button": "Enroll",
+    "paragraph": "At BrightFox School, we believe that learning English is accessible to everyone. We offer courses for students of all ages and levels – from beginners to advanced. Our experienced teachers will help you make learning interesting and productive. Join us and start your path to fluent English today!"
+  }
+}
