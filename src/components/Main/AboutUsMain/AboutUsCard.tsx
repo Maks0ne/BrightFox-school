@@ -3,6 +3,8 @@ import { FC } from 'react';
 
 import { Box, BoxProps, Typography } from '@mui/material';
 
+import theme from '@/theme';
+
 interface ICardProps extends BoxProps {
   title: string;
   image: StaticImageData;
@@ -15,28 +17,55 @@ const AboutUsCard: FC<ICardProps> = ({ title, image, altText, paragraph, ...prop
       sx={{
         display: 'flex',
         alignItems: 'center',
-        padding: '2rem',
+        padding: '1rem',
         flexDirection: 'row',
         backgroundColor: 'primary.main',
-        margin: '1rem',
         borderRadius: '16px',
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
-        height: '90%',
+        height: '20vw',
         ...props.sx,
+        [theme.breakpoints.down('sm')]: {
+          height: '25vw',
+        },
       }}
     >
-      <Image
-        src={image}
-        alt={altText}
-        style={{
-          objectFit: 'cover',
-          borderRadius: '10px',
+      <Box
+        sx={{
+          width: '300px',
+          height: '300px',
+          position: 'relative',
+          [theme.breakpoints.down('xl')]: {
+            width: '200px',
+            height: '200px',
+          },
+          [theme.breakpoints.down('lg')]: {
+            width: '150px',
+            height: '150px',
+          },
+          [theme.breakpoints.down('md')]: {
+            width: '100px',
+            height: '100px',
+          },
+          [theme.breakpoints.down('sm')]: {
+            width: '70px',
+            height: '70px',
+          },
         }}
-        width={300}
-        height={300}
-      />
+      >
+        <Image
+          src={image}
+          alt={altText}
+          style={{
+            objectFit: 'cover',
+            borderRadius: '10px',
+          }}
+          fill
+          priority
+          sizes="(max-width: 1700px) 300px"
+        />
+      </Box>
 
-      <Box sx={{ marginLeft: '1rem', textAlign: 'center' }}>
+      <Box sx={{ marginLeft: '1rem', textAlign: 'center', width: '70%' }}>
         <Typography sx={{ color: 'secondary.main' }} variant="subtitle2">
           {title}
         </Typography>

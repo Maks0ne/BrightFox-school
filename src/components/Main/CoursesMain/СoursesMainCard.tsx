@@ -1,30 +1,63 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 
-import { Box, Button, Typography } from '@mui/material';
+import { Box, BoxProps, Button, Typography } from '@mui/material';
 
-interface CoursesMainCardProps {
+import theme from '@/theme';
+
+interface CoursesMainCardProps extends BoxProps {
   title: string;
   text: string;
 }
-const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text }) => {
+
+const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) => {
+  const t = useTranslations('CoursesMain');
+
   return (
     <Box
       sx={{
-        width: '45%',
-        height: '45%',
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
         borderRadius: '12px',
         position: 'relative',
         padding: '2rem',
+        height: '28vh',
+        flexDirection: 'column',
+        alignItems: 'center',
+        display: 'flex',
+        width: '40vw',
+        [theme.breakpoints.down('xl')]: {
+          height: '20vh',
+        },
+        [theme.breakpoints.down('sm')]: {
+          width: '80vw',
+          height: '10vh',
+        },
+        [theme.breakpoints.down('xs')]: {
+          height: '10vh',
+        },
+        ...props.sx,
       }}
     >
-      <Typography variant="subtitle2">{title}</Typography>
-      <Typography variant="body1">{text}</Typography>
-      <Box sx={{ display: 'flex', justifyContent: 'end' }}>
-        <Button>Детальнише...</Button>
-      </Box>
+      <Typography sx={{ color: 'secondary.main' }} variant="subtitle2">
+        {title}
+      </Typography>
+      <Typography sx={{ marginBottom: '2rem' }} variant="body1">
+        {text}
+      </Typography>
+      <Button
+        sx={{
+          position: 'absolute',
+          bottom: '1rem',
+          right: '1rem',
+          '&:hover': {
+            backgroundColor: 'secondary.main',
+          },
+        }}
+      >
+        {t('button')}
+      </Button>
     </Box>
   );
 };
+
 export default CoursesMainCard;

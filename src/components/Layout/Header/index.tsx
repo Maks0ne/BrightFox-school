@@ -1,78 +1,81 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import { AppBar, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
+import HeaderDrawer from './Drawer';
+
+import MenuIcon from '@mui/icons-material/Menu';
+import { useMediaQuery, useTheme } from '@mui/material';
+import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
 
 import logo from '@/app/icon.png';
 import LanguageButton from '@/components/ui/LanguageButton';
 import NavButton from '@/components/ui/NavButton';
 import { useLocalizedPath } from '@/hooks/localHelper';
-import theme from '@/theme';
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const { localizedPath } = useLocalizedPath();
-  const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const theme = useTheme();
+  const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
+  const t = useTranslations('Navigation');
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
   };
 
   return (
-    <AppBar
-      component="header"
-      sx={{
-        position: 'sticky',
-      }}
-    >
-      <Toolbar sx={{ height: '7vh' }}>
+    <AppBar component="header" sx={{ position: 'sticky' }}>
+      <Toolbar component="nav" sx={{ height: '7vh', justifyContent: 'space-between' }}>
         <Link href={localizedPath}>
           <Image priority src={logo} alt="Fox" width={50} height={50} />
         </Link>
-        <Typography variant="body2" component="div" sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="body2"
+          component="div"
+          sx={{
+            flexGrow: 1,
+            [theme.breakpoints.down('md')]: {
+              fontSize: '12px',
+            },
+          }}
+        >
           Bright
           <Typography
             variant="body2"
             component="span"
-            sx={{ color: `${theme.palette.secondary.light}` }}
+            sx={{
+              color: `${theme.palette.secondary.light}`,
+              [theme.breakpoints.down('md')]: {
+                fontSize: '12px',
+              },
+            }}
           >
             Fox
           </Typography>
           School
         </Typography>
         <LanguageButton />
-        <NavButton>About</NavButton>
-        <NavButton onClick={handleMenuClick}>Services</NavButton>
-        <Menu
-          sx={{
-            '& .MuiPaper-root': {
-              background: `${theme.palette.secondary.dark}`,
-              width: '250px',
-              height: '150px',
-            },
-          }}
-          id="basic-menu"
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={handleMenuClose}
-        >
-          <MenuItem sx={{ color: theme.palette.grey[200] }} onClick={handleMenuClose}>
-            Service 1
-          </MenuItem>
-          <MenuItem sx={{ color: theme.palette.grey[200] }} onClick={handleMenuClose}>
-            Service 2
-          </MenuItem>
-          <MenuItem sx={{ color: theme.palette.grey[200] }} onClick={handleMenuClose}>
-            Service 3
-          </MenuItem>
-        </Menu>
-        <NavButton>Contact</NavButton>
+        {isMdUp ? (
+          <Box sx={{ display: 'flex' }}>
+            <NavButton>{t('courses')}</NavButton>
+            <NavButton>{t('contacts')}</NavButton>
+          </Box>
+        ) : (
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+          >
+            <MenuIcon sx={{ width: '24px', height: '24px' }} />
+          </IconButton>
+        )}
       </Toolbar>
+      <HeaderDrawer open={drawerOpen} onClose={handleDrawerToggle} />
     </AppBar>
   );
 };

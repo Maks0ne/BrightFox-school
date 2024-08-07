@@ -7,6 +7,7 @@ import { FC, useEffect } from 'react';
 import { Box, Typography } from '@mui/material';
 
 import ActionButton from '@/components/ui/ActionButton';
+import theme from '@/theme';
 
 interface ITextPart {
   text: string;
@@ -76,6 +77,9 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIn
           left: '7vw',
           width: '52vw',
           padding: '10px',
+          [theme.breakpoints.down('md')]: {
+            width: '80vw',
+          },
         }}
       >
         {activeIndex &&
@@ -102,7 +106,7 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIn
               ...springProps,
             }}
           >
-            <ActionButton>{t('button')}</ActionButton>
+            <ActionButton sx={{ margin: '2rem 0 0 3rem' }}>{t('button')}</ActionButton>
           </animated.div>
         )}
       </Box>

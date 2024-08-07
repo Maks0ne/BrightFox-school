@@ -1,4 +1,9 @@
 {
+  "Navigation": {
+    "home": "Home",
+    "courses": "Courses",
+    "contacts": "Contacts"
+  },
   "Slider": {
     "slide1_title1": "Learning Without Limits",
     "slide1_title2": "BrightFox School!",
@@ -25,5 +30,16 @@
   "ParallaxMain": {
     "button": "Enroll",
     "paragraph": "At BrightFox School, we believe that learning English is accessible to everyone. We offer courses for students of all ages and levels – from beginners to advanced. Our experienced teachers will help you make learning interesting and productive. Join us and start your path to fluent English today!"
+  },
+  "CoursesMain": {
+    "course1_title": "Group Classes",
+    "course1_description": "Our school offers effective group classes in English. The learning process is organized in small groups, allowing each student to receive adequate attention from the instructor and actively participate in the lesson. The group dynamic helps to develop communication skills and confidence in speaking.",
+    "course2_title": "Children's Classes",
+    "course2_description": "We offer specialized English language courses for children. Classes are conducted in a playful manner, making the learning process engaging and enjoyable for young learners. Our experienced instructors use modern techniques tailored for children of different ages and skill levels.",
+    "course3_title": "Classes with Native Speakers",
+    "course3_description": "For those who want to immerse themselves in the language environment and improve their skills, we offer classes with native English speakers. This is a great way to enhance pronunciation, expand vocabulary, and learn more about the culture of English-speaking countries. Lessons with a native speaker will help you feel confident in any communication situation.",
+    "course4_title": "Exam Preparation",
+    "course4_description": "Our school also offers courses for preparing for international English language exams such as IELTS, TOEFL, Cambridge English, and others. Experienced instructors will help you master the necessary skills and strategies for successfully passing exams. A personalized approach to each student ensures achieving high results.",
+    "button": "More Information"
   }
 }

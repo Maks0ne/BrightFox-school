@@ -32,8 +32,14 @@ const theme = createTheme({
     },
     h2: {
       color: colors.grey700,
-      fontSize: '3rem',
+      fontSize: '2.8rem',
       fontWeight: 600,
+      '@media (max-width:850px)': {
+        fontSize: '2.3rem',
+      },
+      '@media (max-width:650px)': {
+        fontSize: '2.1rem',
+      },
     },
     h3: {
       color: colors.grey700,
@@ -53,16 +59,22 @@ const theme = createTheme({
     },
     subtitle1: {
       color: colors.grey700,
-      fontSize: '2.125rem',
+      fontSize: '2rem',
       fontWeight: 600,
+      '@media (max-width:850px)': {
+        fontSize: '1.7rem',
+      },
+      '@media (max-width:650px)': {
+        fontSize: '1.5rem',
+      },
     },
     subtitle2: {
       color: colors.grey50,
-      fontSize: '1.4rem',
+      fontSize: '1.2rem',
     },
     body1: {
       color: colors.grey50,
-      fontSize: '1.225rem',
+      fontSize: '1rem',
     },
     body2: {
       color: colors.grey50,
@@ -112,10 +124,10 @@ const theme = createTheme({
   breakpoints: {
     values: {
       xs: 480,
-      sm: 768,
-      md: 992,
-      lg: 1200,
-      xl: 1440,
+      sm: 650,
+      md: 900,
+      lg: 1100,
+      xl: 1700,
     },
   },
 });

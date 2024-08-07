@@ -7,7 +7,7 @@ const WelcomeTitle: FC = () => {
   const t = useTranslations('WelcomeTitle');
 
   return (
-    <Box sx={{ padding: '4rem 0' }}>
+    <Box sx={{ padding: '0 2rem', margin: '4rem 0' }}>
       <Typography variant="h2" sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box component="span" sx={{ color: 'secondary.main', paddingRight: '10px' }}>
           BrightFox School

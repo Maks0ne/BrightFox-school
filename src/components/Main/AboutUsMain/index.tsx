@@ -7,13 +7,16 @@ import { useInView } from 'react-intersection-observer';
 
 import AboutUsCard from './AboutUsCard';
 
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 
 import img1 from '@/assets/images/aboutUs/1.webp';
 import img2 from '@/assets/images/aboutUs/2.webp';
 import img3 from '@/assets/images/aboutUs/3.webp';
+import theme from '@/theme';
 
 const AboutUsMain: FC = () => {
+  const isMd = useMediaQuery(theme.breakpoints.down('md'));
+
   const [leftRef, leftInView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [rightRef, rightInView] = useInView({ triggerOnce: true, threshold: 0.2 });
   const [bottomRef, bottomInView] = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -36,11 +39,25 @@ const AboutUsMain: FC = () => {
     transform: bottomInView ? 'translateY(0)' : 'translateY(50%)',
     config: { tension: 60, friction: 10 },
   });
+
+  const rightStyle = {
+    ...rightAnimation,
+    width: isMd ? '70%' : '45%',
+  };
+  const leftStyle = {
+    ...leftAnimation,
+    width: isMd ? '70%' : '45%',
+  };
+  const bottomStyle = {
+    ...bottomAnimation,
+    width: isMd ? '70%' : '65%',
+  };
   return (
     <Box
       sx={{
         position: 'relative',
         padding: '0 2rem',
+        marginBottom: '7rem',
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -51,15 +68,15 @@ const AboutUsMain: FC = () => {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          gap: '50px',
+          gap: '5rem',
+          alignItems: 'center',
+          [theme.breakpoints.down('md')]: {
+            flexDirection: 'column',
+            gap: '3rem',
+          },
         }}
       >
-        <animated.div
-          ref={leftRef}
-          style={{
-            ...leftAnimation,
-          }}
-        >
+        <animated.div ref={leftRef} style={leftStyle}>
           <AboutUsCard
             title={t('card1_title')}
             paragraph={t('card1_paragraph')}
@@ -69,12 +86,7 @@ const AboutUsMain: FC = () => {
         </animated.div>
 
         {/* Right Section */}
-        <animated.div
-          ref={rightRef}
-          style={{
-            ...rightAnimation,
-          }}
-        >
+        <animated.div ref={rightRef} style={rightStyle}>
           <AboutUsCard
             title={t('card2_title')}
             paragraph={t('card2_paragraph')}
@@ -85,19 +97,13 @@ const AboutUsMain: FC = () => {
       </Box>
 
       {/* Bottom Section */}
-      <animated.div
-        ref={bottomRef}
-        style={{
-          ...bottomAnimation,
-          width: '70%',
-          height: '45%',
-        }}
-      >
+      <animated.div ref={bottomRef} style={bottomStyle}>
         <AboutUsCard
           title={t('card3_title')}
           paragraph={t('card3_paragraph')}
           altText="Child"
           image={img3}
+          sx={{ mt: '3rem' }}
         />
       </animated.div>
     </Box>

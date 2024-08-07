@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
@@ -8,68 +9,73 @@ import CoursesMainCard from './СoursesMainCard';
 import { Box } from '@mui/material';
 
 import bg from '@/assets/images/courses-main.webp';
+import theme from '@/theme';
 
 const CoursesMain: FC = () => {
+  const t = useTranslations('CoursesMain');
+
   return (
     <Box
       sx={{
-        marginTop: '5rem',
-        height: '130vh',
+        height: '110vh',
         backgroundImage: `url(${bg.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        padding: '0 2rem',
+        boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
+        padding: '2rem',
+        [theme.breakpoints.down('xl')]: {
+          height: '90vh',
+        },
+        [theme.breakpoints.down('lg')]: {
+          height: '80vh',
+        },
+        [theme.breakpoints.down('xs')]: {
+          height: '80vh',
+        },
       }}
     >
       <ParallaxProvider>
-        <Parallax translateY={[-20, 40]}>
+        <Parallax translateY={[5, 70]}>
           <Box
             sx={{
-              height: '100%',
-              width: '100%',
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
-              justifyContent: 'center',
-              paddingTop: '20rem',
+              gap: '20px',
+              maxWidth: '1200px',
+              margin: '0 auto',
+              padding: '2rem',
             }}
           >
             <Box
               sx={{
                 display: 'flex',
-                flexWrap: 'wrap',
-                gap: '40px',
                 justifyContent: 'center',
-                maxWidth: '1200px',
+                gap: '20px',
+                width: '90%',
+                [theme.breakpoints.down('sm')]: {
+                  flexDirection: 'column',
+                },
               }}
             >
-              <CoursesMainCard
-                title="lorem"
-                text="  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui inventore deserunt,
-                    blanditiis cupiditate ipsum, et laudantium possimus nostrum unde, quam debitis
-                    nihil. Delectus exercitationem quam architecto eos corporis, quasi accusamus."
-              />
+              <CoursesMainCard title={t('course1_title')} text={t('course1_description')} />
 
-              <CoursesMainCard
-                title="lorem"
-                text="  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui inventore deserunt,
-                    blanditiis cupiditate ipsum, et laudantium possimus nostrum unde, quam debitis
-                    nihil. Delectus exercitationem quam architecto eos corporis, quasi accusamus."
-              />
-
-              <CoursesMainCard
-                title="lorem"
-                text="  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui inventore deserunt,
-                    blanditiis cupiditate ipsum, et laudantium possimus nostrum unde, quam debitis
-                    nihil. Delectus exercitationem quam architecto eos corporis, quasi accusamus."
-              />
-
-              <CoursesMainCard
-                title="lorem"
-                text="  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui inventore deserunt,
-                    blanditiis cupiditate ipsum, et laudantium possimus nostrum unde, quam debitis
-                    nihil. Delectus exercitationem quam architecto eos corporis, quasi accusamus."
-              />
+              <CoursesMainCard title={t('course2_title')} text={t('course2_description')} />
+            </Box>
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '20px',
+                width: '90%',
+                [theme.breakpoints.down('sm')]: {
+                  flexDirection: 'column',
+                },
+              }}
+            >
+              <CoursesMainCard title={t('course3_title')} text={t('course3_description')} />
+              <CoursesMainCard title={t('course4_title')} text={t('course4_description')} />
             </Box>
           </Box>
         </Parallax>

@@ -7,14 +7,13 @@ const ActionButton: FC<ButtonProps> = ({ children, ...props }) => {
     <Button
       sx={{
         display: 'block',
-        margin: '2vw 0 0 2vw',
-        padding: '12px 25px',
+        padding: '1rem 2rem',
         border: '2px solid',
         borderRadius: '16px',
         borderColor: 'secondary.main',
         backgroundColor: '#ff88001f',
         transition: 'background-color 0.5s',
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         fontWeight: '700',
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
         ...props.sx,
