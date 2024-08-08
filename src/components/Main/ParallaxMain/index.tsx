@@ -16,24 +16,24 @@ const ParallaxMain: FC = () => {
   return (
     <Box
       sx={{
-        minHeight: '60svh',
+        minHeight: '60vh',
         marginBottom: '5rem',
         [theme.breakpoints.down('xl')]: {
-          minHeight: '40svh',
+          minHeight: '40vh',
         },
         [theme.breakpoints.down('md')]: {
-          minHeight: '32svh',
+          minHeight: '32vh',
         },
       }}
     >
       <Box
         display="flex"
         sx={{
-          minHeight: '60svh',
+          minHeight: '60vh',
           maxWidth: '100%',
           boxShadow: '0px 2px 15px rgba(0, 0, 0, 1)',
           [theme.breakpoints.down('xl')]: {
-            minHeight: '40svh',
+            minHeight: '40vh',
           },
           [theme.breakpoints.down('md')]: {
             minHeight: '32vh',
