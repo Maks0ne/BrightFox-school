@@ -22,7 +22,7 @@ const ParallaxMain: FC = () => {
           height: '40vh',
         },
         [theme.breakpoints.down('md')]: {
-          height: '32dvh',
+          height: '32lvh',
         },
         // [theme.breakpoints.down('sm')]: {
         //   height: '25vh',
@@ -36,10 +36,10 @@ const ParallaxMain: FC = () => {
           maxWidth: '100%',
           boxShadow: '0px 2px 15px rgba(0, 0, 0, 1)',
           [theme.breakpoints.down('xl')]: {
-            height: '40dvh',
+            height: '40lvh',
           },
           [theme.breakpoints.down('md')]: {
-            height: '32dvh',
+            height: '32lvh',
           },
           // [theme.breakpoints.down('sm')]: {
           //   height: '25vh',
@@ -56,7 +56,7 @@ const ParallaxMain: FC = () => {
           }}
         >
           {' '}
-          <div style={{ height: '35dvh' }} />
+          <div style={{ height: '35lvh' }} />
         </Parallax>
         <Box
           sx={{
