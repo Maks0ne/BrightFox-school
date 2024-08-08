@@ -20,20 +20,23 @@ const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) =>
         borderRadius: '12px',
         position: 'relative',
         padding: '2rem',
-        height: '28vh',
+        textAlign: 'center',
+        // height: '28vh',
         flexDirection: 'column',
         alignItems: 'center',
         display: 'flex',
         width: '40vw',
+        border: '1px solid',
+        borderColor: 'secondary.main',
         [theme.breakpoints.down('xl')]: {
-          height: '20vh',
+          // height: '20vh',
         },
         [theme.breakpoints.down('sm')]: {
           width: '80vw',
-          height: '13vh',
+          // height: '13vh',
         },
         [theme.breakpoints.down('xs')]: {
-          height: '10vh',
+          // height: '10vh',
         },
         ...props.sx,
       }}
@@ -41,7 +44,7 @@ const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) =>
       <Typography sx={{ color: 'secondary.main', fontWeight: 900 }} variant="subtitle2">
         {title}
       </Typography>
-      <Typography sx={{ marginBottom: '2rem' }} variant="body1">
+      <Typography sx={{ marginBottom: '4rem' }} variant="body1">
         {text}
       </Typography>
       <Button

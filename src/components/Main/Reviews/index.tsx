@@ -69,7 +69,7 @@ const Reviews: FC = () => {
         }}
         breakpoints={{
           650: {
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
         }}
       >
@@ -80,9 +80,10 @@ const Reviews: FC = () => {
                 display: 'flex',
                 borderRadius: '16px',
                 boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
-                height: '14rem',
+                height: '15rem',
+                justifyContent: 'space-between',
                 [theme.breakpoints.down('md')]: {
-                  height: '18rem',
+                  height: '20rem',
                 },
               }}
             >

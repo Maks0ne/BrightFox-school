@@ -25,7 +25,7 @@ const ParallaxMain: FC = () => {
           height: '32vh',
         },
         [theme.breakpoints.down('sm')]: {
-          height: '20vh',
+          height: '25vh',
         },
       }}
     >
@@ -42,7 +42,7 @@ const ParallaxMain: FC = () => {
             height: '32vh',
           },
           [theme.breakpoints.down('sm')]: {
-            height: '20vh',
+            height: '25vh',
           },
         }}
       >

@@ -17,21 +17,21 @@ const CoursesMain: FC = () => {
   return (
     <Box
       sx={{
-        height: '110vh',
+        height: '100vh',
         backgroundImage: `url(${bg.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
         padding: '2rem',
-        [theme.breakpoints.down('xl')]: {
-          height: '90vh',
-        },
-        [theme.breakpoints.down('lg')]: {
-          height: '80vh',
-        },
+        // [theme.breakpoints.down('xl')]: {
+        //   height: '90vh',
+        // },
+        // [theme.breakpoints.down('lg')]: {
+        //   height: '80vh',
+        // },
         [theme.breakpoints.down('sm')]: {
-          height: '110vh',
+          height: '120vh',
         },
       }}
     >
