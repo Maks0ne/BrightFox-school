@@ -38,7 +38,7 @@ const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) =>
         ...props.sx,
       }}
     >
-      <Typography sx={{ color: 'secondary.main' }} variant="subtitle2">
+      <Typography sx={{ color: 'secondary.main', fontWeight: 900 }} variant="subtitle2">
         {title}
       </Typography>
       <Typography sx={{ marginBottom: '2rem' }} variant="body1">
@@ -49,6 +49,9 @@ const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) =>
           position: 'absolute',
           bottom: '1rem',
           right: '1rem',
+          backgroundColor: '#ff880075',
+          borderRadius: '10px',
+          transition: 'background-color 0.5s',
           '&:hover': {
             backgroundColor: 'secondary.main',
           },

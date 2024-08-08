@@ -71,6 +71,7 @@ const theme = createTheme({
     subtitle2: {
       color: colors.grey50,
       fontSize: '1.2rem',
+      fontWeight: 800,
     },
     body1: {
       color: colors.grey50,
