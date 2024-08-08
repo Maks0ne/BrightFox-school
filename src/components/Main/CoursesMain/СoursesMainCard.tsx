@@ -32,7 +32,7 @@ const CoursesMainCard: FC<CoursesMainCardProps> = ({ title, text, ...props }) =>
           // height: '20vh',
         },
         [theme.breakpoints.down('sm')]: {
-          width: '80vw',
+          width: '85vw',
           // height: '13vh',
         },
         [theme.breakpoints.down('xs')]: {

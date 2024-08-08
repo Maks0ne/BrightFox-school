@@ -64,6 +64,7 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIn
         <Image
           src={backgroundImage}
           fill
+          priority
           alt={'Створіть яскраве майбутнє із BrightFox School!'}
           style={{ objectFit: 'cover' }}
         />

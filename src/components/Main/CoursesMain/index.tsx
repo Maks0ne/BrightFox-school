@@ -24,14 +24,14 @@ const CoursesMain: FC = () => {
         backgroundRepeat: 'no-repeat',
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
         padding: '2rem',
-        // [theme.breakpoints.down('xl')]: {
-        //   height: '90vh',
-        // },
+        [theme.breakpoints.down('xl')]: {
+          height: '80vh',
+        },
         // [theme.breakpoints.down('lg')]: {
         //   height: '80vh',
         // },
         [theme.breakpoints.down('sm')]: {
-          height: '120vh',
+          height: '140vh',
         },
       }}
     >
@@ -42,8 +42,9 @@ const CoursesMain: FC = () => {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              maxWidth: '1700px',
               gap: '20px',
-              maxWidth: '1200px',
+              justifyContent: 'center',
               margin: '0 auto',
               padding: '2rem',
             }}
