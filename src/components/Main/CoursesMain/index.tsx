@@ -31,10 +31,10 @@ const CoursesMain: FC = () => {
           height: '80vh',
         },
         [theme.breakpoints.down('md')]: {
-          height: '90vh',
+          height: '90dvh',
         },
         [theme.breakpoints.down('sm')]: {
-          height: '140vh',
+          height: '140dvh',
         },
       }}
     >

@@ -38,7 +38,7 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIn
   return (
     <Box
       sx={{
-        height: '93vh',
+        height: '93dvh',
         position: 'relative',
       }}
     >
