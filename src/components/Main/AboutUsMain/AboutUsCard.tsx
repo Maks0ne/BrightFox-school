@@ -65,7 +65,7 @@ const AboutUsCard: FC<ICardProps> = ({ title, image, altText, paragraph, ...prop
         />
       </Box>
 
-      <Box sx={{ marginLeft: '1rem', textAlign: 'center', width: '70%' }}>
+      <Box sx={{ marginLeft: '1rem', textAlign: 'center', width: '80%' }}>
         <Typography sx={{ color: 'secondary.main' }} variant="subtitle2">
           {title}
         </Typography>

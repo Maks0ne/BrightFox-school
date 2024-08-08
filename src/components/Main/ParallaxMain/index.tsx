@@ -16,34 +16,28 @@ const ParallaxMain: FC = () => {
   return (
     <Box
       sx={{
-        height: '60vh',
+        height: '60svh',
         marginBottom: '5rem',
         [theme.breakpoints.down('xl')]: {
-          height: '40vh',
+          height: '40svh',
         },
         [theme.breakpoints.down('md')]: {
-          height: '32lvh',
+          height: '32svh',
         },
-        // [theme.breakpoints.down('sm')]: {
-        //   height: '25vh',
-        // },
       }}
     >
       <Box
         display="flex"
         sx={{
-          height: '60vh',
+          height: '60svh',
           maxWidth: '100%',
           boxShadow: '0px 2px 15px rgba(0, 0, 0, 1)',
           [theme.breakpoints.down('xl')]: {
-            height: '40lvh',
+            height: '40svh',
           },
           [theme.breakpoints.down('md')]: {
-            height: '32lvh',
+            height: '32%',
           },
-          // [theme.breakpoints.down('sm')]: {
-          //   height: '25vh',
-          // },
         }}
       >
         <Parallax
@@ -56,7 +50,7 @@ const ParallaxMain: FC = () => {
           }}
         >
           {' '}
-          <div style={{ height: '35lvh' }} />
+          <div style={{ height: '35svh' }} />
         </Parallax>
         <Box
           sx={{
