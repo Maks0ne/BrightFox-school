@@ -30,8 +30,8 @@ const CoursesMain: FC = () => {
         [theme.breakpoints.down('lg')]: {
           height: '80vh',
         },
-        [theme.breakpoints.down('xs')]: {
-          height: '80vh',
+        [theme.breakpoints.down('sm')]: {
+          height: '110vh',
         },
       }}
     >

@@ -42,15 +42,15 @@ const AboutUsMain: FC = () => {
 
   const rightStyle = {
     ...rightAnimation,
-    width: isMd ? '70%' : '45%',
+    width: isMd ? '85%' : '45%',
   };
   const leftStyle = {
     ...leftAnimation,
-    width: isMd ? '70%' : '45%',
+    width: isMd ? '85%' : '45%',
   };
   const bottomStyle = {
     ...bottomAnimation,
-    width: isMd ? '70%' : '65%',
+    width: isMd ? '85%' : '65%',
   };
   return (
     <Box
