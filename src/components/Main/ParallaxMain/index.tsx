@@ -22,7 +22,7 @@ const ParallaxMain: FC = () => {
           minHeight: '40vh',
         },
         [theme.breakpoints.down('md')]: {
-          minHeight: '32vh',
+          minHeight: '32dvh',
         },
       }}
     >
@@ -36,7 +36,7 @@ const ParallaxMain: FC = () => {
             minHeight: '40vh',
           },
           [theme.breakpoints.down('md')]: {
-            minHeight: '32vh',
+            minHeight: '32dvh',
           },
         }}
       >
@@ -50,7 +50,7 @@ const ParallaxMain: FC = () => {
           }}
         >
           {' '}
-          <div style={{ minHeight: '35vh' }} />
+          <div style={{ minHeight: '35dvh' }} />
         </Parallax>
         <Box
           sx={{

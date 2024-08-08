@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <AppBar component="header" sx={{ position: 'sticky' }}>
-      <Toolbar component="nav" sx={{ minHeight: '7vh', justifyContent: 'space-between' }}>
+      <Toolbar component="nav" sx={{ minHeight: '7dvh', justifyContent: 'space-between' }}>
         <Link href={localizedPath}>
           <Image priority src={logo} alt="Fox" width={50} height={50} />
         </Link>
