@@ -3,7 +3,7 @@ html {
   line-height: 1.5;
   scroll-behavior: smooth;
   font-size: 16px;
-  viewport-fit: cover;
+  height: -webkit-fill-available;
   @media (max-width: 1700px) {
     font-size: 12px;
   }
@@ -24,6 +24,7 @@ html {
   }
 }
 body {
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   font-family: inherit;
   line-height: inherit;
