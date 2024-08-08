@@ -17,7 +17,7 @@ const CoursesMain: FC = () => {
   return (
     <Box
       sx={{
-        minHeight: '140svh',
+        minHeight: '140vh',
         backgroundImage: `url(${bg.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -25,16 +25,16 @@ const CoursesMain: FC = () => {
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
         padding: '2rem',
         [theme.breakpoints.down('xl')]: {
-          minHeight: '130svh',
+          minHeight: '130vh',
         },
         [theme.breakpoints.down('lg')]: {
-          minHeight: '80svh',
+          minHeight: '80vh',
         },
         [theme.breakpoints.down('md')]: {
-          minHeight: '90svh',
+          minHeight: '90vh',
         },
         [theme.breakpoints.down('sm')]: {
-          minHeight: '140svh',
+          minHeight: '140vh',
         },
       }}
     >
