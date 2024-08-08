@@ -25,7 +25,7 @@ const CoursesMain: FC = () => {
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 1)',
         padding: '2rem',
         [theme.breakpoints.down('xl')]: {
-          height: '110vh',
+          height: '130vh',
         },
         [theme.breakpoints.down('lg')]: {
           height: '80vh',
