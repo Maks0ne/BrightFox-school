@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Nunito } from 'next/font/google';
+import Head from 'next/head';
 import { ReactNode } from 'react';
 
 import './globals.scss';
@@ -30,6 +31,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      </Head>
       <ThemeProviderWrapper>
         <body className={inter.className}>
           <NextIntlClientProvider messages={messages}>
