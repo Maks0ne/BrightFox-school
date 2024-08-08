@@ -19,31 +19,31 @@ const ParallaxMain: FC = () => {
         height: '60vh',
         marginBottom: '5rem',
         [theme.breakpoints.down('xl')]: {
-          height: '45vh',
+          height: '40vh',
         },
         [theme.breakpoints.down('md')]: {
           height: '32vh',
         },
-        [theme.breakpoints.down('sm')]: {
-          height: '25vh',
-        },
+        // [theme.breakpoints.down('sm')]: {
+        //   height: '25vh',
+        // },
       }}
     >
       <Box
         display="flex"
         sx={{
-          height: '50vh',
+          height: '60vh',
           maxWidth: '100%',
           boxShadow: '0px 2px 15px rgba(0, 0, 0, 1)',
           [theme.breakpoints.down('xl')]: {
-            height: '45vh',
+            height: '40vh',
           },
           [theme.breakpoints.down('md')]: {
             height: '32vh',
           },
-          [theme.breakpoints.down('sm')]: {
-            height: '25vh',
-          },
+          // [theme.breakpoints.down('sm')]: {
+          //   height: '25vh',
+          // },
         }}
       >
         <Parallax

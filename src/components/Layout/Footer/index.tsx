@@ -7,7 +7,7 @@ const Footer: FC = () => {
     <Box
       component="footer"
       sx={{
-        height: '15vh',
+        height: '215vh',
         width: '100%',
         backgroundColor: 'primary.main',
       }}
