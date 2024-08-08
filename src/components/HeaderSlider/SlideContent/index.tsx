@@ -74,7 +74,7 @@ const SlideContent: FC<ISlideContentProps> = ({ title, backgroundImage, activeIn
       <Box
         sx={{
           position: 'absolute',
-          top: '30vh',
+          top: '30dvh',
           left: '7vw',
           width: '52vw',
           padding: '10px',

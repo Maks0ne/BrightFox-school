@@ -36,7 +36,7 @@ const ParallaxMain: FC = () => {
           maxWidth: '100%',
           boxShadow: '0px 2px 15px rgba(0, 0, 0, 1)',
           [theme.breakpoints.down('xl')]: {
-            height: '40vh',
+            height: '40dvh',
           },
           [theme.breakpoints.down('md')]: {
             height: '32dvh',

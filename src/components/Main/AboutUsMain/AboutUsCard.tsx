@@ -25,7 +25,7 @@ const AboutUsCard: FC<ICardProps> = ({ title, image, altText, paragraph, ...prop
         height: '20vw',
         ...props.sx,
         [theme.breakpoints.down('sm')]: {
-          height: '25vw',
+          minHeight: '30vw',
         },
       }}
     >

@@ -83,7 +83,7 @@ const Reviews: FC = () => {
                 height: '15rem',
                 justifyContent: 'space-between',
                 [theme.breakpoints.down('md')]: {
-                  height: '20rem',
+                  height: '22rem',
                 },
               }}
             >
@@ -113,7 +113,7 @@ const Reviews: FC = () => {
                       src={googleIcon}
                       priority
                       fill
-                      alt="FiveStars"
+                      alt="Google Icon"
                       sizes="(max-width: 1700px) 50px"
                     />
                   </Box>

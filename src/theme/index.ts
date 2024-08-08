@@ -38,7 +38,7 @@ const theme = createTheme({
         fontSize: '2.3rem',
       },
       '@media (max-width:650px)': {
-        fontSize: '2.1rem',
+        fontSize: '1.9rem',
       },
     },
     h3: {
@@ -65,7 +65,7 @@ const theme = createTheme({
         fontSize: '1.7rem',
       },
       '@media (max-width:650px)': {
-        fontSize: '1.5rem',
+        fontSize: '1.3rem',
       },
     },
     subtitle2: {
