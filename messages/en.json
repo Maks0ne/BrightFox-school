@@ -1,0 +1,217 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "courses": "Courses",
+    "contacts": "Contacts",
+    "singleNav": "Individual Training",
+    "pairNav": "Pair Training",
+    "groupNav": "Group Training"
+  },
+  "Slider": {
+    "slide1_title1": "Learning Without Limits",
+    "slide1_title2": "BrightFox School!",
+    "slide2_title1": "Your Path to Perfect English",
+    "slide2_title2": "Starts Here!",
+    "slide3_title1": "Growing Together, Learning Together at",
+    "slide3_title2": "BrightFox School",
+    "slide4_title1": "Learn English Easily and Fun with",
+    "slide4_title2": "BrightFox School!",
+    "button": "Trial lesson"
+  },
+  "WelcomeTitle": {
+    "title": "- Your road to fluent English!",
+    "subtitle": "We offer quality education for all ages and levels."
+  },
+  "AboutUsMain": {
+    "card1_title": "BrightFox School - Your Path to English Excellence!",
+    "card1_paragraph": "Welcome to BrightFox School, where your path to excellence in the English language begins! Our school offers an individual approach to each student to help you achieve your language goals. Whether it's improving conversational skills, preparing for exams, or learning English from scratch – we will help you unlock your full potential.",
+    "card2_title": "Discover the World of English with BrightFox School.",
+    "card2_paragraph": "With BrightFox School, you will open new horizons in learning the English language. Our courses and programs will help you not only master grammar and vocabulary but also confidently use the language in everyday life and professional environments. We use modern teaching methods to make the learning process engaging and effective.",
+    "card3_title": "With Us, Your English Will Shine!",
+    "card3_paragraph": "Our classes at BrightFox School turn learning English into an exciting journey. We use interactive teaching methods, modern resources, and practical activities to make the learning process lively and dynamic. You will not only learn the language but also learn to use it in real situations, making your English bright and confident."
+  },
+  "ParallaxMain": {
+    "button": "Enroll",
+    "paragraph": "At BrightFox School, we believe that learning English is accessible to everyone. We offer courses for students of all ages and levels – from beginners to advanced. Our experienced teachers will help you make learning interesting and productive. Join us and start your path to fluent English today!"
+  },
+  "Reviews": {
+    "title": "Reviews"
+  },
+  "CoursesMain": {
+    "CoursesMainTitle": "Courses",
+    "TabSingle": "Individual",
+    "TabGroup": "Group",
+    "TabPair": "Pair",
+    "PriceFrom": "Price from",
+    "Currency": "UAH",
+    "MoreDetails": "More details",
+    "SingleTitle": "Individual Training",
+    "SingleBenefits1": "1 lesson = 50 minutes of individual communication",
+    "SingleBenefits2": "Ability to choose a convenient schedule",
+    "SingleBenefits3": "Individual learning plan tailored to your goal",
+    "SingleCard1Title": "Standard lesson",
+    "SingleCard1Description": "Standard lessons aimed at improving all aspects of English proficiency: grammar, speaking, listening, and writing.",
+    "SingleCard2Title": "Course for IT professionals",
+    "SingleCard2Description": "English for IT professionals. In-depth study of technical vocabulary, practical exercises, and discussion of current topics in the tech industry.",
+    "SingleCard3Title": "Premium lessons",
+    "SingleCard3Description": "Exclusive lessons with a personal teacher and constant access to them.",
+    "SingleCard4Title": "With a native speaker",
+    "SingleCard4Description": "Practice conversational English with a native speaker. Full immersion in the language environment, focus on pronunciation and culture.",
+    "SingleCard5Title": "Course for children",
+    "SingleCard5Description": "Fun and engaging lessons that help children learn English through games, songs, and exciting tasks.",
+    "GroupTitle": "Group Training",
+    "GroupBenefits1": "1 lesson = 50 minutes of group communication",
+    "GroupBenefits2": "Effective and interesting group lessons that help develop language skills through active interaction and teamwork.",
+    "GroupBenefits3": "Suitable for children and adults.",
+    "GroupCard1Title": "For adults",
+    "GroupCard1Description": "Group lessons with an emphasis on speaking practice, sharing opinions, and solving problems. Perfect for partners, colleagues, or friends who want to learn together.",
+    "GroupCard2Title": "For children",
+    "GroupCard2Description": "Group lessons for children conducted in a playful manner, helping to develop language skills through interactive exercises and team games.",
+    "PairTitle": "Pair Training",
+    "PairBenefits1": "1 lesson = 50 minutes of pair communication",
+    "PairBenefits2": "Lessons in a mini-group of two—an ideal option for those who want to study with a friend, colleague, or partner.",
+    "PairBenefits3": "Pair training motivates and creates an atmosphere of mutual support.",
+    "PairCard1Title": "For adults",
+    "PairCard1Description": "Lessons for two with an emphasis on speaking practice, exchanging opinions, and solving tasks. Perfect for partners, colleagues, or friends who want to learn together."
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "question1": "From what age can I start studying?",
+    "answer1": "Children from 6 to 17 years old can participate, and adults of any age.",
+    "question2": "How does the learning process work?",
+    "answer2": "Lessons are conducted online. The duration, timing, and teaching method are determined individually during a trial lesson with the teacher.",
+    "question3": "What is the difference between groups of 4 and 8 people?",
+    "answer3": "Group classes come in two types: 4 people in the group and 8 people. In the 4-person group, there is a greater focus on learning the language with minimal initial knowledge, while in the 8-person group, the focus is on speaking and live communication in English with different people. Grammar is also covered, but in a condensed form.",
+    "question4": "How long does a lesson last?",
+    "answer4": "Lessons for children aged 6 to 12 last 40 minutes, for 12 to 17 years old — 50 minutes, and for adults — 1 hour.",
+    "question5": "What is the schedule for classes?",
+    "answer5": "The schedule is individualized for each student and is determined together with the teacher.",
+    "question6": "If I have an A0 level, can I still study?",
+    "answer6": "Yes, we offer programs from beginner to professional levels. BrightFoxSchool provides the option to study with a teacher individually based on your level or in a group with people of the same level.",
+    "question7": "How do I choose a teacher?",
+    "answer7": "You don't need to choose a teacher. During the trial lesson, after assessing your knowledge, the school will assign a teacher according to your level.",
+    "question8": "How many lessons per week are needed for the best results?",
+    "answer8": "We recommend studying at least 2 times a week. The optimal frequency is 3 times a week. This will help you achieve noticeable and consistent results."
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "nameMinLength": "Name should be at least 2 characters long",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Phone number must be exactly 10 digits",
+    "emailInvalid": "Invalid email address",
+    "emailRequired": "Email is required",
+    "courseRequired": "Please select a course"
+  },
+  "formSubmitting": {
+    "submitSuccess": "Form submitted successfully",
+    "submitError": "An error occurred while submitting the form. Please try again.",
+    "nameLabel": "Name",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "courseLabel": "Select Course",
+    "messageLabel": "Message",
+    "courseOptions": {
+      "standart": "Standard English Course",
+      "it": "IT English Course",
+      "premium": "Premium English Course",
+      "children": "Children's English Course",
+      "native": "Native English Course"
+    },
+    "submitButton": "Submit",
+    "loading": "Loading..."
+  },
+  "contactMain": {
+    "freeLesson": "Start with a free lesson",
+    "contactPrompt": "Enter your contact details, and our team will get in touch soon to schedule your first lesson. We look forward to helping you begin your English learning journey!"
+  },
+  "contactModal": {
+    "tryFreeLesson": "Try our free lesson",
+    "questionsContact": "Got questions? We are always in touch!"
+  },
+  "contactPage": {
+    "contactInformation": "Contact Information",
+    "contactUs": "Contact us",
+    "contactDescription": "Leave a request and we will contact you within 30 minutes"
+  },
+  "coursePageCard": {
+    "currency": "UAH",
+    "pricePerLesson": "UAH/lesson",
+    "packageBenefit": "Package Benefit:",
+    "discount": "Discount of",
+    "button": "Sign Up"
+  },
+  "coursePageIndividual": {
+    "title": "Individual English Classes",
+    "description": "Enroll in individual English lessons online and get personalized instruction tailored to your needs with courses from ",
+    "mobileTab": "Choose a course",
+    "standardTab": "Standard",
+    "itTab": "IT",
+    "premiumTab": "Premium",
+    "nativeTab": "Native Speaker",
+    "kidsTab": "Kids"
+  },
+  "standartIndividualTab": {
+    "title": "Standard English Course",
+    "description": "A standard English course for all levels. The program includes grammar study, vocabulary expansion, development of speaking skills, and confident listening comprehension. Suitable for those who want to improve their English knowledge at a comfortable pace.",
+    "standartStandartCourse": "Standart lesson",
+    "offerStandartCourse": "Standart lessons"
+  },
+  "itIndividualTab": {
+    "title": "IT English Course",
+    "description": "An English course tailored for IT professionals. The program focuses on technical terminology, communication skills in the tech field, negotiation, and participation in international projects. This course will help you confidently interact with colleagues and clients worldwide.",
+    "standartItCourse": "IT lesson",
+    "offerItCourse": "IT lessons"
+  },
+  "premiumIndividualTab": {
+    "title": "Premium English Course",
+    "description": "A premium individual course for those who strive to achieve a high level of English proficiency in the shortest time possible. The program is fully tailored to your goals and includes in-depth language study, intensive sessions, and continuous feedback from the instructor.",
+    "standartPremiumCourse": "Premium lesson",
+    "offerPremiumCourse": "Premium lessons",
+    "anotherPremiumCourse": "Premium lessons"
+  },
+  "nativeIndividualTab": {
+    "title": "Native Speaker English Course",
+    "description": "Individual lessons with a native English-speaking instructor. The course focuses on immersion in the language environment, improving pronunciation, understanding cultural nuances, and achieving native-like proficiency in English.",
+    "standartNativeCourse": "Native lesson",
+    "offerNativeCourse": "Native lessons",
+    "anotherNativeCourse": "Native lessons"
+  },
+  "kidsIndividualTab": {
+    "title": "Kids English Course",
+    "description": "Engaging individual lessons for children that make learning English fun and enjoyable. The course program is designed with the child's age and interests in mind, helping them to easily and effectively master the new language.",
+    "standartKidsCourse": "Kids lesson",
+    "offerKidsCourse": "Kids lessons",
+    "anotherKidsCourse": "Kids lessons"
+  },
+  "coursePageGroup": {
+    "title": "Group English Lessons",
+    "description": "Enroll in group English lessons online and improve your language skills in a friendly environment with courses from ",
+    "adultTab": "Adults",
+    "kidsTab": "Kids"
+  },
+  "adultsGroupTab": {
+    "title": "Adult Group English Course",
+    "description": "Group lessons for adults are focused on developing speaking skills and confidence in using the English language. The lessons cover relevant topics and encourage lively interaction. You will be able to improve your language skills in a friendly and supportive environment.",
+    "standartAdultsCourse": "Adult lesson",
+    "offerAdultsCourse": "Adult lessons",
+    "anotherAdultsCourse": "Adult lessons"
+  },
+  "kidsGroupTab": {
+    "title": "Kids Group English Course",
+    "description": "Group courses for kids are designed to make learning English engaging and motivating. Lessons include games, songs, and interactive activities, helping children quickly master the language in the company of their peers.",
+    "standartKidsCourse": "Kids group lesson",
+    "offerKidsCourse": "Kids group lessons",
+    "anotherKidsCourse": "Kids group lesson"
+  },
+  "coursePagePair": {
+    "title": "Pair English Lessons",
+    "description": "Enroll in pair English lessons online and improve your language skills in a comfortable environment with courses from "
+  },
+  "adultsPairTab": {
+    "title": "Pair English for Adults",
+    "description": "Pair English lessons for adults are perfect for those who want to study together with a friend, colleague, or partner. The course allows you to focus on practical language use in a comfortable setting, making learning more effective.",
+    "standartPairCourse": "Pair lesson",
+    "offerPairCourse": "Pair lessons",
+    "anotherPairCourse": "Pair lesson"
+  }
+}
