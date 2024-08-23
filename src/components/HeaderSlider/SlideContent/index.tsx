@@ -111,7 +111,7 @@ const SlideContent: FC<ISlideContentProps> = ({
             >
               <Typography
                 variant="h1"
-                sx={{ color: item.color, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+                sx={{ color: item.color, textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)' }}
               >
                 {item.text}
               </Typography>

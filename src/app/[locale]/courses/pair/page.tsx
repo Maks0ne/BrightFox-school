@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Парні курси - Bright Fox School',
   description:
     'Парні курси дозволяють вам навчатися разом з партнером або другом, що сприяє ефективному навчальному процесу.',
-  metadataBase: new URL('https://bright-fox-school.vercel.app/'),
+  metadataBase: new URL('https://eng-school.vercel.app/'),
   openGraph: {
     title: 'Парні курси - Bright Fox School',
     description:

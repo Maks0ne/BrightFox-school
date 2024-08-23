@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Індивідуальні курси - Bright Fox School',
   description:
     'Індивідуальні курси, що дозволяють отримати персоналізоване навчання для досягнення ваших цілей.',
-  metadataBase: new URL('https://bright-fox-school.vercel.app/'),
+  metadataBase: new URL('https://eng-school.vercel.app/'),
   openGraph: {
     title: 'Індивідуальні курси - Bright Fox School',
     description:

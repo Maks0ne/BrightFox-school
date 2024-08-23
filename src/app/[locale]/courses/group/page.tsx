@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Групові курси - Bright Fox School',
   description:
     'Заняття в групі допоможуть вам розвивати мовні навички разом з іншими учнями в інтерактивному середовищі.',
-  metadataBase: new URL('https://bright-fox-school.vercel.app/'),
+  metadataBase: new URL('https://eng-school.vercel.app/'),
   openGraph: {
     title: 'Групові курси - Bright Fox School',
     description:

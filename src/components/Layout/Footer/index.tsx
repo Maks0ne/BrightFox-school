@@ -33,17 +33,19 @@ const Footer: FC = () => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          gap: '0.5rem',
         }}
       >
         <Box sx={{ display: 'flex', gap: '3rem', justifyContent: 'center' }}>
           <a
             href={'https://www.instagram.com/bright.fox.school?igsh=MWVxcmY1ZGg4c2U4MA=='}
             target="_blank"
+            aria-label="instagram"
           >
             <Instagram sx={{ color: 'secondary.main' }} />
           </a>
 
-          <a href={'https://t.me/brightfoxschool'} target="_blank">
+          <a href={'https://t.me/brightfoxschool'} target="_blank" aria-label="telegram">
             <Telegram sx={{ color: 'secondary.main' }} />
           </a>
         </Box>

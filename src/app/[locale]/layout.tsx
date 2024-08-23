@@ -18,7 +18,7 @@ const inter = Nunito({
 export const metadata: Metadata = {
   title: 'BrightFox School',
   description: 'BrightFox School - школа англійської мови.',
-  metadataBase: new URL('https://bright-fox-school.vercel.app/'),
+  metadataBase: new URL('https://eng-school.vercel.app/'),
   openGraph: {
     images: [
       {
