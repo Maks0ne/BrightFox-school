@@ -9,12 +9,12 @@ import { Box, Typography } from '@mui/material';
 import ContactForm from '@/components/Forms/ContactForm';
 import theme from '@/theme';
 
-const ContactPage: FC = () => {
+const ContactsLayout: FC = () => {
   const t = useTranslations('contactPage');
   return (
     <Box
       sx={{
-        minHeight: '85vh',
+        minHeight: '80vh',
         display: 'flex',
         width: '100vw',
         [theme.breakpoints.down('md')]: {
@@ -153,4 +153,4 @@ const ContactPage: FC = () => {
   );
 };
 
-export default ContactPage;
+export default ContactsLayout;

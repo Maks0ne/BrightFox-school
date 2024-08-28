@@ -13,7 +13,7 @@ import { useTheme } from '@mui/material';
 import image from '@/assets/images/CoursesPage/Group.webp';
 import Container from '@/components/Layout/Container';
 
-const GroupCourse: FC = () => {
+const GroupCourseLayout: FC = () => {
   const theme = useTheme();
   const t = useTranslations('coursePageGroup');
   const [value, setValue] = useState(0);
@@ -139,4 +139,4 @@ const GroupCourse: FC = () => {
   );
 };
 
-export default GroupCourse;
+export default GroupCourseLayout;

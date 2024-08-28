@@ -31,8 +31,8 @@ export const metadata = {
   },
 };
 
-const CourseGroup = () => {
+const CourseGroupPage = () => {
   return;
 };
 
-export default CourseGroup;
+export default CourseGroupPage;

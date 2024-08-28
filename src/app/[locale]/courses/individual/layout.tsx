@@ -27,7 +27,7 @@ import { useMediaQuery, useTheme } from '@mui/material';
 import image from '@/assets/images/CoursesPage/Individual.webp';
 import Container from '@/components/Layout/Container';
 
-const IndividualCourse: FC = () => {
+const IndividualCourseLayout: FC = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   const t = useTranslations('coursePageIndividual');
@@ -195,4 +195,4 @@ const IndividualCourse: FC = () => {
   );
 };
 
-export default IndividualCourse;
+export default IndividualCourseLayout;
