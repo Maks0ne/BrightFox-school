@@ -50,9 +50,11 @@ const CoursesMainCard: FC<ICourseMainCardProps> = ({ title, description, price, 
       <Typography fontSize={'1.2rem'} fontWeight={900}>
         {`${t('PriceFrom')}: ${price} ${t('Currency')}`}
       </Typography>
-      <Link href={redirectUrl} passHref>
-        <ActionButton sx={{ marginTop: 'auto', maxWidth: '100%' }}>{t('MoreDetails')}</ActionButton>
-      </Link>
+      <Box sx={{ marginTop: 'auto' }}>
+        <Link href={redirectUrl} passHref>
+          <ActionButton>{t('MoreDetails')}</ActionButton>
+        </Link>
+      </Box>
     </Box>
   );
 };
